@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Todap - Task Management App
 
-## Getting Started
+_English Version_
 
-First, run the development server:
+### About todap
+**todap** is a modern full-stack task management web application built with Next.js, Prisma, and Supabase to help users organize daily activities efficiently. Powered by Shadcn Blocks and Tailwind CSS, it delivers a fast, clean, and interactive full CRUD experience with real-time UI synchronization using Next.js Server Actions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Features
+- **Full CRUD Operations** – Seamlessly create, display, edit (via Dialog), and permanently delete tasks (via AlertDialog).
+- **Visual Feedback** – Toggle tasks as completed with instant visual cues like text strikethrough and reduced opacity.
+- **Persistent States** – Completion checkmarks stay intact even after a browser refresh, thanks to LocalStorage integration.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tech Stack
+- ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+- ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white)
+- ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+- ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=flat&logo=shadcnui&logoColor=white)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### License
+This project is licensed under the **MIT License**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+_Indonesian Language_
 
-To learn more about Next.js, take a look at the following resources:
+### Tentang todap
+**todap** adalah aplikasi web manajemen tugas full-stack modern yang dibangun menggunakan Next.js, Prisma, dan Supabase untuk membantu pengguna mengatur aktivitas harian secara efisien. Ditenagai oleh Shadcn Blocks dan Tailwind CSS, aplikasi ini menyajikan pengalaman CRUD penuh yang cepat dan interaktif dengan sinkronisasi UI waktu-nyata via Next.js Server Actions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Fitur Utama
+- **Operasi CRUD Penuh** – Tambah, tampilkan, ubah (via Dialog), dan hapus tugas secara permanen (via AlertDialog) dengan mudah.
+- **Umpan Balik Visual** – Tandai tugas selesai dengan efek coretan teks (strikethrough) dan pengurangan opasitas instan.
+- **State Persisten** – Status centang tugas tetap tersimpan aman dan tidak hilang saat browser di-refresh berkat integrasi LocalStorage.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Tech Stack
+- ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+- ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white)
+- ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+- ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=flat&logo=shadcnui&logoColor=white)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Lisensi
+Proyek ini dilisensikan di bawah **Lisensi MIT**
