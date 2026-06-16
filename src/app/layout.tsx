@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar, { NavLinkItem } from "@/components/shadcn-space/blocks/hero-02/navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
 });
 
@@ -22,12 +18,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const navData: NavLinkItem[] = [
+    { name: 'Home', href: '/' },
+    { name: 'Todo', href: '/todo' },
+    { name: 'Contact', href: 'https://github.com/mdafaadiwinata' },
+    { name: 'Docs', href: 'https://www.prisma.io/docs/guides/frameworks/nextjs#23-add-dotenv-to-prismaconfigts' },
+  ]
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${jakartaSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex flex-col"><Navbar navData={navData} />{children}</body>
     </html>
   );
 }
